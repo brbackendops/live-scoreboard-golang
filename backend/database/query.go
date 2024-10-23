@@ -1,0 +1,16 @@
+package database
+
+var Schema = `
+
+	CREATE TABLE IF NOT EXISTS match (
+		id SERIAL PRIMARY KEY,
+		homeTeam VARCHAR(200) NOT NULL,
+		awayTeam VARCHAR(200) NOT NULL,
+		homeScore INTEGER NOT NULL,
+		awayScore INTEGER NOT NULL,
+		status VARCHAR(20) NULL
+	);
+
+
+	ALTER TABLE match ADD COLUMN IF NOT EXISTS created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW();
+`
