@@ -12,7 +12,7 @@
   * [X]  middlewares
 
     * [X]  cors
-    * [X]  rate limite
+    * [X]  rate limit
 * [X]  react
 
 ## Production
